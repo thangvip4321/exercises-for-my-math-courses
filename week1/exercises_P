@@ -1,0 +1,176 @@
+\documentclass{article}
+\begin{document}
+								**P1.3**
+
+$x_\mathsf{new} = (1-\alpha)  x_\mathsf{old}+\alpha x_\mathsf{update}$
+
+Rewrite the update equation:
+
+$x_\mathsf{n} = (1-\alpha)  x_\mathsf{n-1}+\alpha x_\mathsf{update}$
+
+The same equation can be applied to $x_\mathsf{n-1}$
+
+$x_\mathsf{n-1} = (1-\alpha)  x_\mathsf{n-2}+\alpha x_\mathsf{update}$
+
+...
+
+$x_\mathsf{1} = (1-\alpha)  x_\mathsf{0}+\alpha x_\mathsf{update}$
+
+$\Rightarrow x_\mathsf{k} $ consists of an element $A$ scaled by $\alpha$ and an element $B$ scaled by $1-\alpha$.
+
+However, formula of $A$ contains element scaled by $\alpha$ and an element scaled by $1-\alpha$.
+
+$\Rightarrow x_\mathsf{n}$ contains element scaled by $\alpha^{k} (1-\alpha)^{n-k}$  $\forall k < n, k \in \mathrm{N} $
+
+Hence $x_\mathsf{new} = (1-\alpha)  x_\mathsf{old}+\alpha x_\mathsf{update}$ is exponentially weighted \newline
+ 
+								**P1.4**\newline
+
+1.
+Addition of 2 vectors in $R^{n}$
+
+$[a_\mathsf{n},a_\mathsf{n-1},...,a_\mathsf{1}]$ + $[b_\mathsf{n},b_\mathsf{n-1},...,b_\mathsf{1}]$ = $[a_\mathsf{n}+b_\mathsf{n},a_\mathsf{n-1}+b_\mathsf{n-1},...,a_\mathsf{1}+b_\mathsf{1}]$ 
+
+And scalar multiplication of a vector in $R^{n}$
+
+$\alpha [a_\mathsf{n},a_\mathsf{n-1},...,a_\mathsf{1}]$ = $[\alpha a_\mathsf{n},\alpha a_\mathsf{n-1},...,\alpha a_\mathsf{1}]$
+
+result in a vector living in $R^{n}$ ,hence $R^n$ is closed under addition and scalar multiplication .
+
+Therefore, $R^n$ is a vector space.\newline
+
+2.\newline
+Addition of 2 tensors in $R^{m*n*...*q}$ is element-wise addition, thus the output tensors will retain the old dimesion,thus be an element of $R^{m*n*...*q}$ 
+
+The same to scalar multiplication ,which is element-wise multiplication of every elements in the tensor with a scalar.
+
+Hence $R^{m*n*...*q}$ is closed under addition and scalar multiplication.
+Therefore, $R^{m*n*...*q}$ is a vector space.\newline
+
+3.\newline
+Given 2 functions $f(x)$ and $g(x)$ in ${C}[a,b]$
+,we have $f(x)$ + $g(x)$ = $(f+g)(x)$ , resulting in a continuous function with domain $D_f \bigcap D_g $ = $[a,b]$
+
+Similarly, $f(x)$ * $g(x)$ = $(f*g)(x)$ , resulting in a continuous function with domain $D_f \bigcap D_g $ = $[a,b]$
+
+Hence $C[a,b]$ is a vector space. \newline
+
+4.\newline
+Obviously sum of 2 polynomials with degree at most n will result in another polynomial with degree at most n.
+
+And also multiplying a polynomial by a scalar will not increase nor decrease the degree, thus the output still stay in $P_n({R}):=\{\sum_{i=0}^n a_i x^i\}$
+
+Hence $P_n({R}):=\{\sum_{i=0}^n a_i x^i\}$ is closed under addition and scalar multiplication, thus is a vector space.\newline
+
+**P1.5**
+
+1.The space of positive real axis:
+
+Multiplying an element of the positive real axis by a negative scalar will result in an element not belong to the positive real axis.\newline
+
+2.Unit vectors
+
+Addition of 2 unit vectors will result in a vector which is not a unit vector, since unit vectors are linearly independant.
+
+3.Latitude and longitude
+
+$(90^o N, 0^o S)$ + $(50^o N, 10^o S)$ = $( 140^o N, 10^o S)$ , which does not belong to Earth's coordinate anymore, so latitude and longitude space is not closed under addition.
+
+4.Monomials $\{x^k\}$
+
+$x^k + x^{k-1}$ is a sum of 2 monomials but obviously not a monomial.
+
+So the space of monomials is not closed under addition.\newline
+
+P1.6
+
+$tu$ is vector $u$ stretched or shrinked by a factor $t$, so $tu$ $\forall$ $t \in {R}$  will be a line crossing the point u and the origin.
+
+$+v$ means translating the line in a way that move the origin to the point . 
+
+Hence $L_1=\{w\in V: w = v+tu, ~\forall t\in\mathbb{R}, ~ u,v\in V\}$ is a line crossing v in direction of u.\newline
+
+P1.7
+
+ $w = (1-t) v + tu=t(u-v)+v$
+$u-v$ is a vector that have a direction from point v to point u
+
+$\Rightarrow t(u-v)$ is a line crossing the origin that have a direction from point v to point u
+
+$+v$ is a translation that translate the origin to point v. Since the line has a v-to-u direction, the translated line will also cross the point u.
+
+P1.8:
+
+Given 2 random points $u$ and $v$ in a vector space ${V}$. 
+The formula of the line $D$ crossing points $u$ and $v$ is: 
+
+$L_2=\{w\in V: w = (1-t) v + tu, ~ \forall t\in{R}, ~ u,v\in V\}$
+
+Thus every point on $D$ and between 2 points $u$ and $v$ is also in vector space V
+
+Recall the formula of line crossing a point:
+$L_1=\{w\in V: w = v+tu, ~\forall t\in\mathbb{R}, ~ u,v\in V\}$
+,with v being the point on $D$ , u being any point in the same space as v, which is $V$
+
+Since a line only consists of linear combinations of u and v,which are also elements of $V$ ,it must be contained in $V$.
+
+Hence $V$ is flat.\newline
+
+P1.9\newline
+$(u-\vec{0})$ is a segment with direction from origin to point u, as $(u-\vec{0})=u$
+so scalar t $\forall t\in R$ allow the segment to stretch freely, hence, become a line , as t can reach $+-\infty$  \newline
+
+P1.10\newline
+
+w = (1-t) v + tu = t(u-v) + v
+
+It is similar to the form seen on P1.7, however, t here is restricted from 0 to 1, so the length of t(u-v) is now limited to the distance between u and v
+
+So $L3$ will be only a segment connecting point u and v.\newline
+
+P1.11:\newline
+Since we allow $v$ to move freely on another segment, $L_3$ will become a set of points inside a triangle with vertices $u,u_2,v_2$ or only a line if $u_2,v_2,u$ are aligned.\newline
+Repeating the same process, we will consecutively add a point in space and $L_3$ will be a set of points inside a polyhedron with vertices being the points $u,u_2,u_3,..$ introduced in the formula of $L_3$  
+
+P1.12\newline
+Basis vectors for $R_\mathsf{d}$\newline
+- [1,0,0,0,0,...0]\newline
+- [0,1,0,0,0,...0]\newline
+...\newline
+- [0,0,0,0,0,...1]\newline
+ associated coordinate vectors: $[a_1,a_2,...,a_d]$\newline
+
+Basis vectors for $R_\mathsf{m*n}$\newline
+$[1,0,0,0,0,...0\newline
+ 0,0,0,0,0,...0\newline
+ ...\newline
+ 0,0,0,0,0,...0]\newline
+[0,1,0,0,0,...0\newline
+ 0,0,0,0,0,...0\newline
+ ...\newline
+ 0,0,0,0,0,...0]\newline
+...\newline
+[0,0,0,0,0,...0\newline
+ 0,0,0,0,0,...0\newline
+ ...\newline
+ 0,0,0,0,0,...1]\newline$
+ associated coordinate vectors: $[a_1,a_2,...,a_{m*n}]$\newline
+
+Basis vectors for $P_\mathsf{n}(R)$\newline
+- [$x^n$,0,0,0,0,...0]\newline
+- [0,$x^{n-1}$,0,0,0,...0]\newline
+...\newline
+- [0,0,0,0,0,...$x^0$]\newline
+associated coordinate vectors: $[a_1,a_2,...,a_d]$\newline
+
+P1.13\newline
+
+"linear" in linear combinations means however the input is distorted, the output will be distorted in the same way.\newline
+
+P1.14\newline
+Denote (x,y,z) is the coordinate in the standard basis of $R^3$.
+
+the coordinates in this basis B is: 
+$$(\frac{x+y}{\sqrt{2}},\frac{y-x}{\sqrt{2}},z)$$
+\end{document}
+
