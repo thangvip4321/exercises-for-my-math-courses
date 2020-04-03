@@ -1,0 +1,9 @@
+\documentclass{article}
+\begin{document}
+
+			
+$\bar{A}=\left[ \begin{array}{ccc|c}  & A & & \mathbf{b}  \\ 0 & \ldots & 0 & 1 \end{array}\right]$ 
+and $\bar{x} = \begin{bmatrix} x \\ 1 \end{bmatrix}$ 
+
+$\bar{A}=\left[ \begin{array}{ccc|c} \, & A & & \mathbf{b} \ \\ 0 & \ldots & 0 & 1 \end{array} \right]$ and $\bar{x} = \begin{bmatrix} x\\ 1 \end{bmatrix}$.
+\end{document} 

@@ -1,0 +1,3 @@
+## From lecture slides
+
+- **P2.1** We can turn the affine transformation $T_b x = Ax + b$ into a linear transformation using [**augmented matrix**](https://en.wikipedia.org/wiki/Affine_transformation#Augmented_matrix) $Ax+b \Rightarrow \bar{A}\bar{x}$ with $\bar{A}=\left[ \begin{array}{ccc|c} \, & A & & \mathbf{b} \ \\ 0 & \ldots & 0 & 1 \end{array} \right]$ and $\bar{x} = \begin{bmatrix} x\\ 1 \end{bmatrix}$. The last (seems redundant) line allows us to combine any number of affine transformations (e.g., a series of rotation, translation, then rotation) into one by multiplying the respective matrices. Verify this for yourself!
