@@ -1,0 +1,29 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/thang/exercises-for-my-math-courses"
+		}
+	],
+	"settings":
+	{
+		"debug.configurations":
+		[
+			{
+				"console": "integratedTerminal", 
+				"name": "Python launch: Current File (Integrated Terminal)", 
+				"request": "launch", 
+				"type": "python", 
+				"program": "${file}",
+				"pythonPath":"/home/thang/miniconda3/envs/gayshjt/bin/python3"
+			},
+			{
+				"console": "integratedTerminal", 
+				"name": "Python attach: Current File (Integrated Terminal)", 
+				"request": "attach", 
+				"type": "python", 
+				"program": "${file}"
+			},
+		]
+	}
+}

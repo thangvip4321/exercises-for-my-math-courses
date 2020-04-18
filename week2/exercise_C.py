@@ -54,6 +54,6 @@ def animate_plot(*args):
     ani = FuncAnimation(fig, update,frames=matrices_set,init_func=init, blit=True,repeat=False)
     plt.show()
 
-if __name__ == '__main__':
-    animate_plot((pi/2,1,1,1,1,0,0))
+#if __name__ == '__main__':
+#    animate_plot((pi/2,1,1,1,1,0,0))
 

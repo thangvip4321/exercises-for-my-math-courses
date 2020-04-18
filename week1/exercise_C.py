@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import tensorflow as tf
 def genData(N,d,distribution="normal",**kwargs):
 	if distribution == "normal":
 		try:
@@ -52,6 +53,9 @@ def modeSample(sample,w):
 	x = np.argmax(w)
 	return sample[x]
 
-
+if __name__ == "__main__":
+	i = 3
+	a = i+2
+	print(i)	
 
 
