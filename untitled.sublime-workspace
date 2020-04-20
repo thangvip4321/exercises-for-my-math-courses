@@ -376,19 +376,19 @@
 	"buffers":
 	[
 		{
-			"file": "untitled.sublime-project",
+			"file": "week3/exercise_C1.py",
 			"settings":
 			{
-				"buffer_size": 585,
+				"buffer_size": 1198,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "week1/exercise_C.py",
+			"file": "untitled.sublime-project",
 			"settings":
 			{
-				"buffer_size": 1702,
+				"buffer_size": 585,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -574,10 +574,12 @@
 	},
 	"expanded_folders":
 	[
-		"/home/thang/exercises-for-my-math-courses"
+		"/home/thang/exercises-for-my-math-courses",
+		"/home/thang/exercises-for-my-math-courses/week3"
 	],
 	"file_history":
 	[
+		"/home/thang/exercises-for-my-math-courses/week1/exercise_C.py",
 		"/home/thang/.config/sublime-text-3/Packages/Debugger/data/debug_adapters/vscode-python/extension/out/client/debugger/debugAdapter/main.js",
 		"/home/thang/exercises-for-my-math-courses/week3/exercise_C1.py",
 		"/home/thang/.config/sublime-text-3/Packages/PackageResourceViewer/README.md",
@@ -706,11 +708,39 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "week3/exercise_C1.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
 					"file": "untitled.sublime-project",
 					"semi_transient": false,
 					"settings":
@@ -722,8 +752,8 @@
 						"selection":
 						[
 							[
-								326,
-								326
+								585,
+								0
 							]
 						],
 						"settings":
@@ -736,35 +766,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "week1/exercise_C.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1702,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1644,
-								1644
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 640.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -792,7 +793,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -820,7 +821,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -901,7 +902,7 @@
 		[
 			[
 				"",
-				"~/firmware.sublime-project"
+				"~/models/research/deeplab/untitled.sublime-project"
 			]
 		],
 		"width": 380.0

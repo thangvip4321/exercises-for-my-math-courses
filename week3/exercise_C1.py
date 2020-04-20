@@ -6,13 +6,7 @@ data,target = fetch_olivetti_faces(return_X_y = True)
 
 extractor = PCA(n_components =0.7)
 per_face_features =extractor.fit_transform(data,target)
-#print(extractor.components_.shape)
-#print(extractor.explained_variance_ratio_)
-#print(extractor.mean_)
-#print(extractor.n_features_)
-#print(np.dot(extractor.components_[3],extractor.components_[1]))
-#print(extractor.get_covariance().shape)
-#print(x)
+
 basis = extractor.components_
 mean_face = extractor.mean_
 rank = extractor.n_components_
@@ -25,7 +19,7 @@ for i in range(covariance_matrix.shape[0]):
 print("the inner product of each vector with another one in the basis is",covariance_matrix)
 
 # for the part of verifying each value in coordinate vector equals the inner product of the basis vector 
-#and (X-X_mean) , we will only test this one 1 example
+# and (X-X_mean) , we will only test this one 1 example
 
 difference_vector = [per_face_features[0,i] -np.dot((data[0] - mean_face),basis[i]) for i in range(rank)]
 print("so the difference in result between this formula and the standard one in PCA is:",difference_vector)
