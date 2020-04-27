@@ -376,37 +376,28 @@
 	"buffers":
 	[
 		{
-			"file": "week3/exercise_C1.py",
+			"file": "week2/exercise_C.py",
 			"settings":
 			{
-				"buffer_size": 1198,
+				"buffer_size": 3340,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "untitled.sublime-project",
+			"file": "week4/exercise_C1.py",
 			"settings":
 			{
-				"buffer_size": 585,
+				"buffer_size": 628,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/thang/.config/sublime-text-3/Packages/Debugger/data/debug_adapters/vscode-python/sublime_debugger.json",
+			"file": "week2/exercise_C2.py",
 			"settings":
 			{
-				"buffer_size": 295,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/thang/.config/sublime-text-3/Packages/Debugger/data/debug_adapters/native-debug/sublime_debugger.json",
-			"settings":
-			{
-				"buffer_size": 4376,
+				"buffer_size": 3488,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -575,13 +566,18 @@
 	"expanded_folders":
 	[
 		"/home/thang/exercises-for-my-math-courses",
-		"/home/thang/exercises-for-my-math-courses/week3"
+		"/home/thang/exercises-for-my-math-courses/week1",
+		"/home/thang/exercises-for-my-math-courses/week2"
 	],
 	"file_history":
 	[
+		"/home/thang/exercises-for-my-math-courses/week3/exercise_C1.py",
+		"/home/thang/exercises-for-my-math-courses/__init__.py",
+		"/home/thang/exercises-for-my-math-courses/untitled.sublime-project",
+		"/home/thang/.config/sublime-text-3/Packages/Debugger/data/debug_adapters/native-debug/sublime_debugger.json",
+		"/home/thang/.config/sublime-text-3/Packages/Debugger/data/debug_adapters/vscode-python/sublime_debugger.json",
 		"/home/thang/exercises-for-my-math-courses/week1/exercise_C.py",
 		"/home/thang/.config/sublime-text-3/Packages/Debugger/data/debug_adapters/vscode-python/extension/out/client/debugger/debugAdapter/main.js",
-		"/home/thang/exercises-for-my-math-courses/week3/exercise_C1.py",
 		"/home/thang/.config/sublime-text-3/Packages/PackageResourceViewer/README.md",
 		"/home/thang/.config/sublime-text-3/Packages/Debugger/data/debug_adapters/vscode-python/extension.vsixmanifest",
 		"/home/thang/.config/sublime-text-3/Packages/Python Debugger/README.md",
@@ -690,14 +686,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"self.ydata",
+			"self.xdata",
+			"[^\\.]xdata",
+			"xdata",
+			"^[.]xdata",
+			"xdata",
 			"vector = np.zeros(shape =(1,6))\n\tstrats = data.split(\";\")\n\tfor i in range(len(strats)):\n\t\tif strats[i]==\"use rhythmic sounds/words that rhyme with the original ones\":\n\t\t\tvector[0,0] =1\n\t\telif strats[i]==\"use flashcards\":\n\t\t\tvector[0,1] =1\n\t\telif strats[i]==\"physically act out the words\":\n\t\t\tvector[0,2]=1\n\t\telif strats[i] ==\"use the words in various sentences\":\n\t\t\tvector[0,3]=1\n\t\telif strats[i]==\"review lessons often\":\n\t\t\tvector[0,4]=1\n\t\telif strats[i]==\"Others\":\n\t\t\tvector[0,5]=1\n\treturn vector"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"self.ydata[i]",
+			"self.xdata[i]",
+			"self.xdata"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -713,19 +718,49 @@
 			[
 				{
 					"buffer": 0,
-					"file": "week3/exercise_C1.py",
+					"file": "week2/exercise_C.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1198,
+						"buffer_size": 3340,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								286,
-								286
+								1102,
+								1102
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "week4/exercise_C1.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								499,
+								499
 							]
 						],
 						"settings":
@@ -736,92 +771,37 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "untitled.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 585,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								585,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/home/thang/.config/sublime-text-3/Packages/Debugger/data/debug_adapters/vscode-python/sublime_debugger.json",
+					"file": "week2/exercise_C2.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 295,
+						"buffer_size": 3488,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								295,
-								295
+								1755,
+								1755
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 1235.0,
-						"translation.y": 0.0,
+						"translation.x": 0.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/home/thang/.config/sublime-text-3/Packages/Debugger/data/debug_adapters/native-debug/sublime_debugger.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4376,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								108,
-								108
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -860,11 +840,11 @@
 	"menu_visible": true,
 	"output.Debugger":
 	{
-		"height": 120.0
+		"height": 290.0
 	},
 	"output.exec":
 	{
-		"height": 28.0
+		"height": 31.0
 	},
 	"output.find_results":
 	{
@@ -882,7 +862,7 @@
 	"project": "untitled.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -909,7 +889,7 @@
 	},
 	"select_symbol":
 	{
-		"height": 377.0,
+		"height": 392.0,
 		"last_filter": "",
 		"selected_items":
 		[
